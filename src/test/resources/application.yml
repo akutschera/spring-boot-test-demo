@@ -1,11 +1,13 @@
 foo:
   bar: is overridden in config
   root:
-    default: only set in root default
+    default: only set in root default yml
     for-profile: is overridden in 'local' profile
 
 config:
   profile: yaml properties are always overridden
+
+
 ---
 spring:
   profiles: local

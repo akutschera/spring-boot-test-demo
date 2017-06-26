@@ -37,7 +37,7 @@ public class ApplicationYamlTest {
 
     @Test
     public void fooRootDefault() throws Exception {
-        assertThat( fooRootDefault ).isEqualTo( "only set in root default" );
+        assertThat( fooRootDefault ).isEqualTo( "only set in root default yml" );
     }
 
     @Test
