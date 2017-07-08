@@ -1,4 +1,4 @@
-package com.github.akutschera.datajpatest;
+package com.github.akutschera.data.jpatest;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

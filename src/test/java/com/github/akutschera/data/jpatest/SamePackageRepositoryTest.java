@@ -1,4 +1,4 @@
-package com.github.akutschera.datajpatest;
+package com.github.akutschera.data.jpatest;
 
 /**
  * Created by Andreas Kutschera.

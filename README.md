@@ -26,9 +26,12 @@ for testing purposes.
 
 DataJpaTest
 ====
-The package ...datajpatest contains some database tests
+The package ...data.jpatest contains some database tests
 that use the spring @DataJpaTest annotation.
 I played around with some different use cases
 * The test is in the same package as the JPA-Repository and the Entity
 * The test is in different package from the JPA-Repository and the Entity
+
+The package ...data.flyway contains some database tests that test the
+inclusion and exclusion of flyway db migration scripts.
 

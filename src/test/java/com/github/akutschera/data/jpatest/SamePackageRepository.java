@@ -1,4 +1,4 @@
-package com.github.akutschera.datajpatest;
+package com.github.akutschera.data.jpatest;
 
 
 import org.springframework.data.jpa.repository.JpaRepository;
