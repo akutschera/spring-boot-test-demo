@@ -24,3 +24,11 @@ The examples should help to find out who overrides what
 and where you can (or need to) override default properties
 for testing purposes.
 
+DataJpaTest
+====
+The package ...datajpatest contains some database tests
+that use the spring @DataJpaTest annotation.
+I played around with some different use cases
+* The test is in the same package as the JPA-Repository and the Entity
+* The test is in different package from the JPA-Repository and the Entity
+
