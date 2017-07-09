@@ -21,7 +21,7 @@ public class ApplicationYamlTest {
     @Value( "${foo.bar}" )
     private String fooBar;
 
-    @Value( "${foo.root.default}" )
+    @Value( "${foo.root.default-value}" )
     private String fooRootDefault;
 
     @Value( "${foo.root.for-profile}" )
