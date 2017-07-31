@@ -1,0 +1,16 @@
+one:
+   foo: bar
+
+ignored:
+   this: is ignored by because we have no setter in either config bean
+
+# this is used to show that you can configure a map with either
+# "one" or "two" as keys or a map of maps called "nested" that
+# will return another map for keys "one" or "two"
+# see tests in com.github.akutschera.properties.maps for details
+
+nested:
+   one:
+     foo: baz
+   two:
+     foo: foobar
