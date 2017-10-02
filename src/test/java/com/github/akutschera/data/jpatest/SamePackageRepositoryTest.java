@@ -15,7 +15,7 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(classes = {SamePackageRepository.class})
+@ContextConfiguration(classes = DummyBean.class)
 // not really necessary because it is excluded in application.properties
 // just here to show that how it is done on a per-test basis
 @SpringBootTest( properties = {
