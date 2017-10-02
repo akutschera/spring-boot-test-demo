@@ -24,6 +24,7 @@
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
     <java.version>1.8</java.version>
     <spring-cloud-dependencies.version>Dalston.SR2</spring-cloud-dependencies.version>
+    <expansion.test.property>For ExpansionTest</expansion.test.property>
   </properties>
 
   <dependencies>

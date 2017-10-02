@@ -22,7 +22,7 @@ public class ExpansionTest {
 
     @Test
     public void mavenPropertyIsExpandedWithoutTheNeedForSurefireConfiguration() throws Exception {
-        assertThat( propertyFromMaven ).as("you need to filter test resources for this to work").isEqualTo( "Dalston.SR1" );
+        assertThat( propertyFromMaven ).as("you need to filter test resources for this to work").isEqualTo( "For ExpansionTest" );
     }
 
 }
