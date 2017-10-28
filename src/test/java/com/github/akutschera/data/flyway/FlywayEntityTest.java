@@ -13,10 +13,10 @@ import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
 import org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
+// without this property the test will fail
 @SpringBootTest( properties = {
         "spring.jpa.hibernate.ddl-auto=none"
 })
@@ -31,8 +31,5 @@ public class FlywayEntityTest {
     public void flywayShouldHaveAddedRecord() throws Exception {
         assertThat( flywayRepository.count() ).as("/resources/db/migration/*.sql was not executed").isEqualTo( 1L );
     }
-
-    @Configuration
-    static class TestConfig {}
 
 }

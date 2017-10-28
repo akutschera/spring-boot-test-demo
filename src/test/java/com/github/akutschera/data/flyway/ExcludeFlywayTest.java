@@ -8,7 +8,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.flyway.FlywayAutoConfiguration;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.context.annotation.Configuration;
 import org.springframework.test.context.junit4.SpringRunner;
 
 /**
@@ -28,6 +27,4 @@ public class ExcludeFlywayTest {
         assertThat( flywayRepository.count() ).as("/resources/db/migration/*.sql was executed").isEqualTo( 0L );
     }
 
-    @Configuration
-    static class TestConfig {}
 }
